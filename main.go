@@ -42,7 +42,7 @@ func main() {
 		os.Exit(0)
 	}
 
-	repoPath, err := ParseRepository(os.Args[1])
+	repoPath, err := ParseRepository(flag.Args()[0])
 	if err != nil {
 		fmt.Println(err)
 		os.Exit(1)
